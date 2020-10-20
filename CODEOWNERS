@@ -31,106 +31,105 @@
 #   @meshcollider
 
 # Docs
-/doc/*[a-zA-Z-].md                          @jonastest00
-/doc/Doxyfile.in                            @jonastest00
-/doc/REST-interface.md                      @jonastest00
-/doc/benchmarking.md                        @jonastest00
-/doc/bitcoin-conf.md                        @jonastest00
-/doc/build-freebsd.md                       @jonastest00
-/doc/build-netbsd.md                        @jonastest00
-/doc/build-openbsd.md                       @jonastest00
-/doc/build-osx.md                           @jonastest00
-/doc/build-unix.md                          @jonastest00
-/doc/build-windows.md                       @jonastest00
-/doc/dependencies.md                        @jonastest00
-/doc/developer-notes.md                     @jonastest00
-/doc/files.md                               @jonastest00
-/doc/gitian-building.md                     @jonastest00
-/doc/reduce-memory.md                       @jonastest00
-/doc/reduce-traffic.md                      @jonastest00
-/doc/release-process.md                     @jonastest00
-/doc/translation_strings_policy.md          @jonastest00
+/doc/Doxyfile.in                            @fanquake
+/doc/REST-interface.md                      @jonasschnelli
+/doc/benchmarking.md                        @ariard
+/doc/bitcoin-conf.md                        @hebasto
+/doc/build-freebsd.md                       @fanquake
+/doc/build-netbsd.md                        @fanquake
+/doc/build-openbsd.md                       @laanwj
+/doc/build-osx.md                           @fanquake
+/doc/build-unix.md                          @laanwj
+/doc/build-windows.md                       @sipsorcery
+/doc/dependencies.md                        @fanquake
+/doc/developer-notes.md                     @laanwj
+/doc/files.md                               @hebasto
+/doc/gitian-building.md                     @laanwj
+/doc/reduce-memory.md                       @fanquake
+/doc/reduce-traffic.md                      @jonasschnelli
+/doc/release-process.md                     @laanwj
+/doc/translation_strings_policy.md          @laanwj
 
 # Build aux
-/build-aux/m4/bitcoin_qt.m4                 @jonastest00
+/build-aux/m4/bitcoin_qt.m4                 @hebasto
 
 # MSVC build system
-/build_msvc/                                @jonastest00
+/build_msvc/                                @sipsorcery
 
 # Settings
-/src/util/settings.*                        @jonastest00
+/src/util/settings.*                        @ryanofsky
 
 # Fuzzing
-/src/test/fuzz/                             @jonastest00
-/doc/fuzzing.md                             @jonastest00
+/src/test/fuzz/                             @practicalswift
+/doc/fuzzing.md                             @practicalswift
 
 # Test framework
-/test/functional/mempool_updatefromblock.py @jonastest00
-/test/functional/feature_asmap.py           @jonastest00
-/test/functional/interface_bitcoin_cli.py   @jonastest00
-/test/functional/tool_wallet.py             @jonastest00
+/test/functional/mempool_updatefromblock.py @hebasto
+/test/functional/feature_asmap.py           @jonatack
+/test/functional/interface_bitcoin_cli.py   @jonatack
+/test/functional/tool_wallet.py             @jonatack
 
 # Translations
-/src/util/translation.h                     @jonastest00
+/src/util/translation.h                     @hebasto
 
 # Dev Tools
-/contrib/devtools/security-check.py         @jonastest00
-/contrib/devtools/test-security-check.py    @jonastest00
-/contrib/devtools/symbol-check.py           @jonastest00
+/contrib/devtools/security-check.py         @fanquake
+/contrib/devtools/test-security-check.py    @fanquake
+/contrib/devtools/symbol-check.py           @fanquake
 
 # Gitian/Guix
-/contrib/gitian-build.py                    @jonastest00
-/contrib/guix/                              @jonastest00
+/contrib/gitian-build.py                    @hebasto
+/contrib/guix/                              @dongcarl
 
 # Compatibility
-/src/compat/glibc_*                         @jonastest00
+/src/compat/glibc_*                         @fanquake
 
 # GUI
-/src/qt/forms/                              @jonastest00
+/src/qt/forms/                              @hebasto
 
 # Wallet
-/src/wallet/                                @jonastest00
+/src/wallet/                                @achow101
 
 # CLI
-/src/bitcoin-cli.cpp                        @jonastest00
+/src/bitcoin-cli.cpp                        @jonatack
 
 # Coinstats
-/src/node/coinstats.*                       @jonastest00
+/src/node/coinstats.*                       @fjahr
 
 # Index
-/src/index/                                 @jonastest00
+/src/index/                                 @fjahr
 
 # Descriptors
-*descriptor*                                @jonastest00
+*descriptor*                                @achow101 @sipa
 
 # Interfaces
-/src/interfaces/                            @jonastest00
+/src/interfaces/                            @ryanofsky
 
 # DB
-/src/txdb.*                                 @jonastest00
-/src/dbwrapper.*                            @jonastest00
+/src/txdb.*                                 @jamesob
+/src/dbwrapper.*                            @jamesob
 
 # Scripts/Linter
-*.sh                                        @jonastest00
-/test/lint/                                 @jonastest00
-/test/lint/lint-shell.sh                    @jonastest00
+*.sh                                        @practicalswift
+/test/lint/                                 @practicalswift
+/test/lint/lint-shell.sh                    @hebasto
 
 # Bech32
-/src/bech32.*                               @jonastest00
-/src/bench/bech32.*                         @jonastest00
+/src/bech32.*                               @sipa
+/src/bench/bech32.*                         @sipa
 
 # PSBT
-/src/psbt*                                  @jonastest00
-/src/node/psbt*                             @jonastest00
-/doc/psbt.md                                @jonastest00
+/src/psbt*                                  @achow101
+/src/node/psbt*                             @achow101
+/doc/psbt.md                                @achow101
 
 # P2P
-/src/net_processing.*                       @jonastest00
-/src/protocol.*                             @jonastest00
+/src/net_processing.*                       @sipa
+/src/protocol.*                             @sipa
 
 # Consensus
-/src/coins.*                                @jonastest00
-/src/script/script.*                        @jonastest00
-/src/script/interpreter.*                   @jonastest00
+/src/coins.*                                @sipa @jamesob
+/src/script/script.*                        @sipa
+/src/script/interpreter.*                   @sipa
 /src/validation.*                           @jonastest00
-/src/consensus/                             @jonastest00
+/src/consensus/                             @sipa
